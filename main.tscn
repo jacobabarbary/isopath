@@ -1,0 +1,75 @@
+[gd_scene load_steps=5 format=3 uid="uid://bsd4llpg8lfqp"]
+
+[ext_resource type="Texture2D" uid="uid://dlosgpapjpimc" path="res://art/tile.svg" id="1_anyty"]
+[ext_resource type="Texture2D" uid="uid://tlpt4w0wp2js" path="res://art/GreenStone.png" id="2_goois"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kd1dx"]
+texture = ExtResource("1_anyty")
+texture_region_size = Vector2i(262, 262)
+0:0/0 = 0
+0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:0/0/physics_layer_0/angular_velocity = 0.0
+
+[sub_resource type="TileSet" id="TileSet_10evt"]
+tile_shape = 3
+tile_layout = 4
+tile_size = Vector2i(285, 300)
+physics_layer_0/collision_layer = 1
+terrain_set_0/mode = 0
+terrain_set_0/terrain_0/name = "Terrain 0"
+terrain_set_0/terrain_0/color = Color(0.5, 0.34375, 0.25, 1)
+terrain_set_1/mode = 0
+sources/6 = SubResource("TileSetAtlasSource_kd1dx")
+
+[node name="main" type="Node2D"]
+
+[node name="TileMap" type="TileMap" parent="."]
+texture_filter = 1
+texture_repeat = 3
+tile_set = SubResource("TileSet_10evt")
+format = 2
+layer_0/tile_data = PackedInt32Array(196606, 6, 0, 196607, 6, 0, 131072, 6, 0, 131073, 6, 0, 196610, 6, 0, 262147, 6, 0, 327684, 6, 0, 393220, 6, 0, 458756, 6, 0, 524292, 6, 0, 524291, 6, 0, 524290, 6, 0, 524289, 6, 0, 458752, 6, 0, 458751, 6, 0, 393214, 6, 0, 327678, 6, 0, 262142, 6, 0, 262143, 6, 0, 327679, 6, 0, 393215, 6, 0, 327680, 6, 0, 262144, 6, 0, 196608, 6, 0, 393216, 6, 0, 458753, 6, 0, 393217, 6, 0, 327681, 6, 0, 262145, 6, 0, 196609, 6, 0, 262146, 6, 0, 327682, 6, 0, 393218, 6, 0, 458754, 6, 0, 458755, 6, 0, 393219, 6, 0, 327683, 6, 0)
+
+[node name="TileMap2" type="TileMap" parent="."]
+texture_filter = 1
+texture_repeat = 3
+position = Vector2(0, -10)
+tile_set = SubResource("TileSet_10evt")
+format = 2
+layer_0/tile_data = PackedInt32Array(196606, 6, 0, 196607, 6, 0, 131072, 6, 0, 131073, 6, 0, 196610, 6, 0, 262147, 6, 0, 327684, 6, 0, 393220, 6, 0, 458756, 6, 0, 524292, 6, 0, 524291, 6, 0, 524290, 6, 0, 524289, 6, 0, 458752, 6, 0, 458751, 6, 0, 393214, 6, 0, 327678, 6, 0, 262142, 6, 0, 262143, 6, 0, 327679, 6, 0, 393215, 6, 0, 327680, 6, 0, 262144, 6, 0, 196608, 6, 0, 393216, 6, 0, 458753, 6, 0, 393217, 6, 0, 327681, 6, 0, 262145, 6, 0, 196609, 6, 0, 262146, 6, 0, 327682, 6, 0, 393218, 6, 0, 458754, 6, 0, 458755, 6, 0, 393219, 6, 0, 327683, 6, 0)
+
+[node name="TileMap3" type="TileMap" parent="."]
+texture_filter = 1
+texture_repeat = 3
+position = Vector2(0, -20)
+tile_set = SubResource("TileSet_10evt")
+format = 2
+layer_0/tile_data = PackedInt32Array(196606, 6, 0, 196607, 6, 0, 131072, 6, 0, 131073, 6, 0, 196610, 6, 0, 262147, 6, 0, 327684, 6, 0, 393220, 6, 0, 458756, 6, 0, 524292, 6, 0, 524291, 6, 0, 524290, 6, 0, 524289, 6, 0, 458752, 6, 0, 458751, 6, 0, 393214, 6, 0, 327678, 6, 0, 262142, 6, 0, 262143, 6, 0, 327679, 6, 0, 393215, 6, 0, 327680, 6, 0, 262144, 6, 0, 196608, 6, 0, 393216, 6, 0, 458753, 6, 0, 393217, 6, 0, 327681, 6, 0, 262145, 6, 0, 196609, 6, 0, 262146, 6, 0, 327682, 6, 0, 393218, 6, 0, 458754, 6, 0, 458755, 6, 0, 393219, 6, 0, 327683, 6, 0)
+
+[node name="TileMap4" type="TileMap" parent="."]
+texture_filter = 1
+texture_repeat = 3
+position = Vector2(0, -20)
+tile_set = SubResource("TileSet_10evt")
+format = 2
+layer_0/tile_data = PackedInt32Array(196606, 6, 0, 196607, 6, 0, 131072, 6, 0, 131073, 6, 0, 196610, 6, 0, 262147, 6, 0, 327684, 6, 0, 393220, 6, 0, 458756, 6, 0, 524292, 6, 0, 524291, 6, 0, 524290, 6, 0, 524289, 6, 0, 458752, 6, 0, 458751, 6, 0, 393214, 6, 0, 327678, 6, 0, 262142, 6, 0, 262143, 6, 0, 327679, 6, 0, 393215, 6, 0, 327680, 6, 0, 262144, 6, 0, 196608, 6, 0, 393216, 6, 0, 458753, 6, 0, 393217, 6, 0, 327681, 6, 0, 262145, 6, 0, 196609, 6, 0, 262146, 6, 0, 327682, 6, 0, 393218, 6, 0, 458754, 6, 0, 458755, 6, 0, 393219, 6, 0, 327683, 6, 0)
+
+[node name="TileMap5" type="TileMap" parent="."]
+texture_filter = 1
+texture_repeat = 3
+position = Vector2(0, -20)
+tile_set = SubResource("TileSet_10evt")
+format = 2
+layer_0/tile_data = PackedInt32Array(196606, 6, 0, 196607, 6, 0, 131072, 6, 0, 131073, 6, 0, 196610, 6, 0, 262147, 6, 0, 327684, 6, 0, 393220, 6, 0, 458756, 6, 0, 524292, 6, 0, 524291, 6, 0, 524290, 6, 0, 524289, 6, 0, 458752, 6, 0, 458751, 6, 0, 393214, 6, 0, 327678, 6, 0, 262142, 6, 0, 262143, 6, 0, 327679, 6, 0, 393215, 6, 0, 327680, 6, 0, 262144, 6, 0, 196608, 6, 0, 393216, 6, 0, 458753, 6, 0, 393217, 6, 0, 327681, 6, 0, 262145, 6, 0, 196609, 6, 0, 262146, 6, 0, 327682, 6, 0, 393218, 6, 0, 458754, 6, 0, 458755, 6, 0, 393219, 6, 0, 327683, 6, 0)
+
+[node name="TileMap6" type="TileMap" parent="."]
+texture_filter = 1
+texture_repeat = 3
+position = Vector2(0, -20)
+tile_set = SubResource("TileSet_10evt")
+format = 2
+layer_0/tile_data = PackedInt32Array(196606, 6, 0, 196607, 6, 0, 131072, 6, 0, 131073, 6, 0, 196610, 6, 0, 262147, 6, 0, 327684, 6, 0, 393220, 6, 0, 458756, 6, 0, 524292, 6, 0, 524291, 6, 0, 524290, 6, 0, 524289, 6, 0, 458752, 6, 0, 458751, 6, 0, 393214, 6, 0, 327678, 6, 0, 262142, 6, 0, 262143, 6, 0, 327679, 6, 0, 393215, 6, 0, 327680, 6, 0, 262144, 6, 0, 196608, 6, 0, 393216, 6, 0, 458753, 6, 0, 393217, 6, 0, 327681, 6, 0, 262145, 6, 0, 196609, 6, 0, 262146, 6, 0, 327682, 6, 0, 393218, 6, 0, 458754, 6, 0, 458755, 6, 0, 393219, 6, 0, 327683, 6, 0)
+
+[node name="GreenStone" type="Sprite2D" parent="."]
+position = Vector2(143, 218)
+texture = ExtResource("2_goois")
